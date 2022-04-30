@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/png" href="favicon.png"> 
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="css/index.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="mobile">
+        <div class="mo_aside_menu">
+            <ul>
+                <li class="menu1">
+                    <div>
+                        <p class="title">Produkte</p>
+                        <p><a>Serum</a></p>
+                        <p><a>Lotion</a></p>
+                        <p><a>Sets</a></p>
+                    </div>
+                    <div>
+                        <p><a>Hauttest</a></p>
+                        <p><a>Über Uns</a></p>
+                        <p><a>Account</a></p>
+                    </div>
+                </li>
+                <li class="menu2">
+                    <p><a>Follow us</a></p>
+                    <p>
+                        @eigenhain.skincare
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 11L11 5" stroke="black" stroke-linecap="square" stroke-linejoin="round"></path>
+                            <path d="M4.66699 4.66667H11.3337V11.3333" stroke="black" stroke-linecap="square"></path>
+                        </svg>
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <ul class="header_fixed">
+            <li class="cate2">
+                <div class="mobile_header">
+                    <nav>
+                        <div class="burger">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                            <div class="line3"></div>
+                        </div>
+                    </nav>
+                </div>
+            </li>
+            <li class="cate2">
+                <a href="/">
+                    <svg width="105" height="10" viewBox="0 0 105 10" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M24.8855 0C21.2176 0 19.0194 2.02047 19.0194 4.84938C19.0194 7.67814 21.0642 9.69876 24.8217 9.69876C27.2882 9.69876 28.4639 8.90394 28.9496 8.33816V9.56366H30.3171V4.72869H24.8217V5.99394H28.9496V6.23675C28.9496 7.4491 27.5943 8.43256 24.9494 8.43256H24.6939C22.0356 8.43256 20.4126 7.13944 20.4126 4.84938C20.4126 2.55932 22.1634 1.2662 24.745 1.2662H25.0005C27.6333 1.2662 28.4384 2.46508 28.579 3.23281H30.1126C29.857 1.44138 28.1061 0 24.8855 0ZM9.21449 8.29764V9.56383H0V0.134516H9.0866V1.40039H1.36736V4.06758H8.31989V5.33378H1.36736V8.29732L9.21449 8.29764ZM13.6986 0.134516H15.0661V9.56383H13.6986V0.134516ZM43.6516 8.29764V9.56383H34.437V0.134516H43.5237V1.40039H35.8045V4.06758H42.7569V5.33378H35.8045V8.29732L43.6516 8.29764ZM57.2943 9.56383V0.134516H55.9262V8.05514L49.485 0.134516H47.5941V9.56383H48.9616V1.64321L55.4028 9.56383H57.2943ZM61.5758 0.134516H63.0936V4.1756H70.3271V0.134516H71.6947V9.56383H70.3271V5.44196H63.0936V9.56383H61.5758V0.134516ZM77.4498 7.15261H83.5716L84.824 9.56383H86.4085L81.4242 0.134516H79.6605L74.6765 9.56383H76.1974L77.4498 7.15261ZM80.5171 1.26608L82.9197 5.88642H78.1145L80.5171 1.26608ZM89.6016 0.134516H90.9691V9.56383H89.6016V0.134516ZM104.89 9.56383V0.134516H103.522V8.05514L97.0811 0.134516H95.1896V9.56383H96.5571V1.64321L102.998 9.56383H104.89Z"
+                            fill="black"></path>
+                    </svg>
+                </a>
+            </li>
+            
+            <li class="cate3">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="3.5" y="5.5" width="17" height="15" stroke="black"></rect>
+                    <path d="M17 8V6C17 3.23858 14.7614 1 12 1V1C9.23858 1 7 3.23858 7 6V8" stroke="black"></path>
+                </svg>
+                <span>0</span>
+            </li>
+        </ul>
+    </header>
+    <header class="pc">
+        <div>
+            
+            <div class="menu1" id="menu1"></div>
+            <ul class="menu_text" id="menu_text">
+                <li><a>Serum</a></li>
+                <li><a>Lotion</a></li>
+                <li><a>Sets</a></li>
+            </ul>
+            <ul class="header_fixed">
+                <li class="cate1">
+                    <a href="/">
+                        <svg width="105" height="10" viewBox="0 0 105 10" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M24.8855 0C21.2176 0 19.0194 2.02047 19.0194 4.84938C19.0194 7.67814 21.0642 9.69876 24.8217 9.69876C27.2882 9.69876 28.4639 8.90394 28.9496 8.33816V9.56366H30.3171V4.72869H24.8217V5.99394H28.9496V6.23675C28.9496 7.4491 27.5943 8.43256 24.9494 8.43256H24.6939C22.0356 8.43256 20.4126 7.13944 20.4126 4.84938C20.4126 2.55932 22.1634 1.2662 24.745 1.2662H25.0005C27.6333 1.2662 28.4384 2.46508 28.579 3.23281H30.1126C29.857 1.44138 28.1061 0 24.8855 0ZM9.21449 8.29764V9.56383H0V0.134516H9.0866V1.40039H1.36736V4.06758H8.31989V5.33378H1.36736V8.29732L9.21449 8.29764ZM13.6986 0.134516H15.0661V9.56383H13.6986V0.134516ZM43.6516 8.29764V9.56383H34.437V0.134516H43.5237V1.40039H35.8045V4.06758H42.7569V5.33378H35.8045V8.29732L43.6516 8.29764ZM57.2943 9.56383V0.134516H55.9262V8.05514L49.485 0.134516H47.5941V9.56383H48.9616V1.64321L55.4028 9.56383H57.2943ZM61.5758 0.134516H63.0936V4.1756H70.3271V0.134516H71.6947V9.56383H70.3271V5.44196H63.0936V9.56383H61.5758V0.134516ZM77.4498 7.15261H83.5716L84.824 9.56383H86.4085L81.4242 0.134516H79.6605L74.6765 9.56383H76.1974L77.4498 7.15261ZM80.5171 1.26608L82.9197 5.88642H78.1145L80.5171 1.26608ZM89.6016 0.134516H90.9691V9.56383H89.6016V0.134516ZM104.89 9.56383V0.134516H103.522V8.05514L97.0811 0.134516H95.1896V9.56383H96.5571V1.64321L102.998 9.56383H104.89Z"
+                                fill="black"></path>
+                        </svg>
+                    </a>
+                </li>
+                <li class="cate2">
+                    <a id="mh">Produkte</a>
+                    <a id="mh2">Hauttest</a>
+                    <a id="mh3">Uber Uns</a>
+                </li>
+                <li class="cate3">
+                    <a>Account</a>
+                    <a>Warenkorb:<span>0</span></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="main_swiper">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/Banner-01_1800x.jpg" id="swipeImg">
+                        <ul class="slider_ul">
+                            <li class="slider_li_title">
+                                <p>°ColdStirred for more effect</p>
+                                <p>Kalt gerührte Gesichtspflege voller hochwertiger Wirkstoffe</p>
+                            </li>
+                            <li class="slider_li_btn">
+                                <a>JETZT KAUFEN</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="img/Banner-02_1800x.jpg">
+                        <ul class="slider_ul">
+                            <li class="slider_li_title">
+                                <p>°ColdStirred for healthy skin</p>
+                                <p>Das Kaltrühren minimiert zudem die Entstehung von unerwünschten Abbauprodukten</p>
+                            </li>
+                            <li class="slider_li_btn">
+                                <a>JETZT KAUFEN</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="img/Banner-03_1800x.jpg">
+                        <ul class="slider_ul">
+                            <li class="slider_li_title">
+                                <p>°ColdStirred Concentrate + °ColdStirred Recharge Lotion</p>
+                                <p>Entdecke Deine persönliche Hautpflege im Set - ab 68 €</p>
+                            </li>
+                            <li class="slider_li_btn">
+                                <a>Jetzt Entdecken</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="sec1">EIGENHAIN °ColdStirred Skincare</div>
+
+        <div class="sec2">
+            <div class="title">Unsere kalt gerührte Gesichtspflege enthält ausschließlich hochwertige Wirkstoffe, die
+                bei der Herstellung nicht erhitzt werden. So bleibt die Komposition aus natürlichen Extrakten,
+                Pflanzenölen, Nährstoffen und Vitaminen erhalten – und Deine Haut bekommt mehr von dem, was ihr gut tut!
+            </div>
+        </div>
+
+        <div class="sec3">
+            <div class="marquee__items">
+                <span class="marquee__item">
+                    <div class="marquee__icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="7" cy="11" r="2.5" stroke="black"></circle>
+                            <circle cx="17" cy="22" r="2.5" stroke="black"></circle>
+                            <path d="M4 25L21 8" stroke="black"></path>
+                            <circle cx="25" cy="22" r="2.5" stroke="black"></circle>
+                        </svg>
+                    </div>
+                    <div class="marquee__text">
+                        Ohne austrocknende Alkohole
+                    </div>
+                </span>
+                <span class="marquee__item">
+                    <div class="marquee__icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.5 17.5517V7H18.5V17.5517L24 25H8L13.5 17.5517Z" stroke="black"></path>
+                        </svg>
+                    </div>
+                    <div class="marquee__text">
+                        Ohne Silikone
+                    </div>
+                </span>
+                <span class="marquee__item">
+                    <div class="marquee__icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.3611 19.9656C18.5061 19.9656 19.9361 18.5356 19.9361 16.1156C19.9361 13.6956 18.5061 12.2656 16.3611 12.2656H13.6111V19.9656H16.3611ZM14.7111 13.2556H16.2511C17.9011 13.2556 18.8361 14.2456 18.8361 16.1156C18.8361 17.9856 17.9011 18.9756 16.2511 18.9756H14.7111V13.2556Z"
+                                fill="black"></path>
+                            <path
+                                d="M29.5 16.2069C29.5 18.2227 28.1027 20.1389 25.6466 21.5787C23.2024 23.0115 19.793 23.9138 16 23.9138C12.207 23.9138 8.79757 23.0115 6.35336 21.5787C3.89731 20.1389 2.5 18.2227 2.5 16.2069C2.5 14.1911 3.89731 12.2748 6.35336 10.8351C8.79757 9.40229 12.207 8.5 16 8.5C19.793 8.5 23.2024 9.40229 25.6466 10.8351C28.1027 12.2748 29.5 14.1911 29.5 16.2069Z"
+                                stroke="black"></path>
+                        </svg>
+                    </div>
+                    <div class="marquee__text">
+                        Made in Germany
+                    </div>
+                </span>
+                <span class="marquee__item">
+                    <div class="marquee__icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.3242 16.0952L14.3628 21.0125L10.9361 23.0064L10.9747 27.9236" stroke="black">
+                            </path>
+                            <path d="M14.3242 5.1206L14.3628 10.0379L10.9361 12.0318L10.9747 16.949" stroke="black">
+                            </path>
+                            <path d="M21.6894 14.9748L21.728 19.8921L18.3014 21.886L18.3399 26.8033" stroke="black">
+                            </path>
+                            <path d="M21.6894 3.99999L21.728 8.91726L18.3014 10.9112L18.3399 15.8284" stroke="black">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="marquee__text">
+                        Ohne Duftstoffe
+                    </div>
+                </span>
+                <span class="marquee__item">
+                    <div class="marquee__icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="7.25" cy="16" r="1.25" fill="black"></circle>
+                            <circle cx="24.75" cy="16" r="1.25" fill="black"></circle>
+                            <circle cx="16" cy="7.25" r="1.25" fill="black"></circle>
+                            <circle cx="16" cy="24.75" r="1.25" fill="black"></circle>
+                        </svg>
+                    </div>
+                    <div class="marquee__text">
+                        Kein Mikroplastik
+                    </div>
+                </span>
+                <span class="marquee__item">
+                    <div class="marquee__icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 7L15.5 25L25 7" stroke="black"></path>
+                        </svg>
+                    </div>
+                    <div class="marquee__text">
+                        Vegan
+                    </div>
+                </span>
+
+                <span class="marquee__item">
+                    <div class="marquee__icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="7" cy="11" r="2.5" stroke="black"></circle>
+                            <circle cx="17" cy="22" r="2.5" stroke="black"></circle>
+                            <path d="M4 25L21 8" stroke="black"></path>
+                            <circle cx="25" cy="22" r="2.5" stroke="black"></circle>
+                        </svg>
+                    </div>
+                    <div class="marquee__text">
+                        Ohne austrocknende Alkohole
+                    </div>
+                </span>
+                <span class="marquee__item">
+                    <div class="marquee__icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.5 17.5517V7H18.5V17.5517L24 25H8L13.5 17.5517Z" stroke="black"></path>
+                        </svg>
+                    </div>
+                    <div class="marquee__text">
+                        Ohne Silikone
+                    </div>
+                </span>
+                <span class="marquee__item">
+                    <div class="marquee__icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.3611 19.9656C18.5061 19.9656 19.9361 18.5356 19.9361 16.1156C19.9361 13.6956 18.5061 12.2656 16.3611 12.2656H13.6111V19.9656H16.3611ZM14.7111 13.2556H16.2511C17.9011 13.2556 18.8361 14.2456 18.8361 16.1156C18.8361 17.9856 17.9011 18.9756 16.2511 18.9756H14.7111V13.2556Z"
+                                fill="black"></path>
+                            <path
+                                d="M29.5 16.2069C29.5 18.2227 28.1027 20.1389 25.6466 21.5787C23.2024 23.0115 19.793 23.9138 16 23.9138C12.207 23.9138 8.79757 23.0115 6.35336 21.5787C3.89731 20.1389 2.5 18.2227 2.5 16.2069C2.5 14.1911 3.89731 12.2748 6.35336 10.8351C8.79757 9.40229 12.207 8.5 16 8.5C19.793 8.5 23.2024 9.40229 25.6466 10.8351C28.1027 12.2748 29.5 14.1911 29.5 16.2069Z"
+                                stroke="black"></path>
+                        </svg>
+                    </div>
+                    <div class="marquee__text">
+                        Made in Germany
+                    </div>
+                </span>
+                <span class="marquee__item">
+                    <div class="marquee__icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.3242 16.0952L14.3628 21.0125L10.9361 23.0064L10.9747 27.9236" stroke="black">
+                            </path>
+                            <path d="M14.3242 5.1206L14.3628 10.0379L10.9361 12.0318L10.9747 16.949" stroke="black">
+                            </path>
+                            <path d="M21.6894 14.9748L21.728 19.8921L18.3014 21.886L18.3399 26.8033" stroke="black">
+                            </path>
+                            <path d="M21.6894 3.99999L21.728 8.91726L18.3014 10.9112L18.3399 15.8284" stroke="black">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="marquee__text">
+                        Ohne Duftstoffe
+                    </div>
+                </span>
+                <span class="marquee__item">
+                    <div class="marquee__icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="7.25" cy="16" r="1.25" fill="black"></circle>
+                            <circle cx="24.75" cy="16" r="1.25" fill="black"></circle>
+                            <circle cx="16" cy="7.25" r="1.25" fill="black"></circle>
+                            <circle cx="16" cy="24.75" r="1.25" fill="black"></circle>
+                        </svg>
+                    </div>
+                    <div class="marquee__text">
+                        Kein Mikroplastik
+                    </div>
+                </span>
+                <span class="marquee__item">
+                    <div class="marquee__icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 7L15.5 25L25 7" stroke="black"></path>
+                        </svg>
+                    </div>
+                    <div class="marquee__text">
+                        Vegan
+                    </div>
+                </span>
+
+                <span class="marquee__item">
+                    <div class="marquee__icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="7" cy="11" r="2.5" stroke="black"></circle>
+                            <circle cx="17" cy="22" r="2.5" stroke="black"></circle>
+                            <path d="M4 25L21 8" stroke="black"></path>
+                            <circle cx="25" cy="22" r="2.5" stroke="black"></circle>
+                        </svg>
+                    </div>
+                    <div class="marquee__text">
+                        Ohne austrocknende Alkohole
+                    </div>
+                </span>
+                <span class="marquee__item">
+                    <div class="marquee__icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.5 17.5517V7H18.5V17.5517L24 25H8L13.5 17.5517Z" stroke="black"></path>
+                        </svg>
+                    </div>
+                    <div class="marquee__text">
+                        Ohne Silikone
+                    </div>
+                </span>
+                <span class="marquee__item">
+                    <div class="marquee__icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.3611 19.9656C18.5061 19.9656 19.9361 18.5356 19.9361 16.1156C19.9361 13.6956 18.5061 12.2656 16.3611 12.2656H13.6111V19.9656H16.3611ZM14.7111 13.2556H16.2511C17.9011 13.2556 18.8361 14.2456 18.8361 16.1156C18.8361 17.9856 17.9011 18.9756 16.2511 18.9756H14.7111V13.2556Z"
+                                fill="black"></path>
+                            <path
+                                d="M29.5 16.2069C29.5 18.2227 28.1027 20.1389 25.6466 21.5787C23.2024 23.0115 19.793 23.9138 16 23.9138C12.207 23.9138 8.79757 23.0115 6.35336 21.5787C3.89731 20.1389 2.5 18.2227 2.5 16.2069C2.5 14.1911 3.89731 12.2748 6.35336 10.8351C8.79757 9.40229 12.207 8.5 16 8.5C19.793 8.5 23.2024 9.40229 25.6466 10.8351C28.1027 12.2748 29.5 14.1911 29.5 16.2069Z"
+                                stroke="black"></path>
+                        </svg>
+                    </div>
+                    <div class="marquee__text">
+                        Made in Germany
+                    </div>
+                </span>
+                <span class="marquee__item">
+                    <div class="marquee__icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.3242 16.0952L14.3628 21.0125L10.9361 23.0064L10.9747 27.9236" stroke="black">
+                            </path>
+                            <path d="M14.3242 5.1206L14.3628 10.0379L10.9361 12.0318L10.9747 16.949" stroke="black">
+                            </path>
+                            <path d="M21.6894 14.9748L21.728 19.8921L18.3014 21.886L18.3399 26.8033" stroke="black">
+                            </path>
+                            <path d="M21.6894 3.99999L21.728 8.91726L18.3014 10.9112L18.3399 15.8284" stroke="black">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="marquee__text">
+                        Ohne Duftstoffe
+                    </div>
+                </span>
+                <span class="marquee__item">
+                    <div class="marquee__icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="7.25" cy="16" r="1.25" fill="black"></circle>
+                            <circle cx="24.75" cy="16" r="1.25" fill="black"></circle>
+                            <circle cx="16" cy="7.25" r="1.25" fill="black"></circle>
+                            <circle cx="16" cy="24.75" r="1.25" fill="black"></circle>
+                        </svg>
+                    </div>
+                    <div class="marquee__text">
+                        Kein Mikroplastik
+                    </div>
+                </span>
+                <span class="marquee__item">
+                    <div class="marquee__icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 7L15.5 25L25 7" stroke="black"></path>
+                        </svg>
+                    </div>
+                    <div class="marquee__text">
+                        Vegan
+                    </div>
+                </span>
+
+            </div>
+        </div>
+
+        <div class="sec4">
+            <ul class="big_ul">
+                <li class="big_li">
+                    <div class="absol">
+                        <p>Anti Aging</p>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="10" cy="10" r="9.5" stroke="black"></circle>
+                        </svg>
+                    </div>
+                    <ul class="small_ul">
+                        <li><img src="img/EIGENHAIN - °ColdStirred Concentrate Light PRO.png"></li>
+                        <li>
+                            <p class="product-card__title">
+                                °ColdStirred<br>
+                                 Concentrate Light PRO
+                            </p>
+                        </li>
+                        <li>
+                            <p class="product-card__sub">
+                                <a>Mischhaut</a><a> Ölige Haut</a><a> Normale Haut</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="product-card__price"> €48 </p>
+                        </li>
+                        <li>
+                            <p class="product-card__btn"><a>In den Warenkorb</a></p>
+                        </li>
+                    </ul>
+                </li>
+                <li class="big_li">
+                    <div class="absol">
+                        <p>Anti Aging</p>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="10" cy="10" r="9.5" stroke="black"></circle>
+                        </svg>
+                    </div>
+                    <ul class="small_ul">
+                        <li><img src="img/EIGENHAIN - °ColdStirred Recharge Lotion Light PRO.png"></li>
+                        <li>
+                            <p class="product-card__title">
+                                °ColdStirred<br>
+                                 Concentrate Light PRO
+                            </p>
+                        </li>
+                        <li>
+                            <p class="product-card__sub">
+                                <a>Mischhaut</a><a> Ölige Haut</a><a> Normale Haut</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="product-card__price"> €48 </p>
+                        </li>
+                        <li>
+                            <p class="product-card__btn"><a>In den Warenkorb</a></p>
+                        </li>
+                    </ul>
+                </li>
+                <li class="big_li">
+                    <div class="absol">
+                        <p>Anti Aging</p>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="10" cy="10" r="9.5" stroke="black"></circle>
+                        </svg>
+                    </div>
+                    <ul class="small_ul">
+                        <li><img src="img/EIGENHAIN - °ColdStirred Set Light PRO.png"></li>
+                        <li>
+                            <p class="product-card__title">
+                                °ColdStirred<br>
+                                 Concentrate Light PRO
+                            </p>
+                        </li>
+                        <li>
+                            <p class="product-card__sub">
+                                <a>Mischhaut</a><a> Ölige Haut</a><a> Normale Haut</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="product-card__price"> <span>€96</span>  €48 </p>
+                        </li>
+                        <li>
+                            <p class="product-card__btn"><a>In den Warenkorb</a></p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="sec5">
+            <ul>
+                <li class="sec5_img_1"><div></div></li>
+                <li class="sec5_text">
+                    <p class="s_text">Aus Wissen und Überzeugung: kalt gerührt und frei von Zusatzstoffen.</p>
+                    <p class="b_text">Unsere Hauptpflege-Produkte werden bei der Verarbeitung kalt gerührt. Dieses spezielle °ColdStirred-Verfahren bewahrt die volle Kraft der natürlichen Extrakte, Pflanzenöle, Nährstoffe und Vitamine. </p>
+                    <p class="b_text">Darüber hinaus entstehen so keine unerwünschten Abbauprodukte. Da wir zudem auf Zusätze wie austrocknende Alkohole, Silikone oder Duftstoffe komplett verzichten, bleibt Dein Haut-Mikrobiom im Gleichgewicht. </p>
+                </li>
+            </ul>
+            <ul>
+                <li class="sec5_text">
+                    <p class="s_text">Aus Wissen und Überzeugung: kalt gerührt und frei von Zusatzstoffen.</p>
+                    <p class="b_text">
+                        + Intensive Feuchtigkeit<br>
+                        + Straffung<br>
+                        + Mehr Elastizität<br>
+                        + Verfeinertes Porenbild<br>
+                        + Hält das Mikrobiom im Gleichgewicht
+                    </p>
+                </li>
+                <li class="sec5_img_2"><div></div></li>
+            </ul>
+        </div>
+
+        <div class="sec6">
+            <div class="sec6_title">Finde Deinen Hauttyp</div>
+
+            <ul class="sec6_flex">
+                <li>
+                    <div>
+                    <img src="img/Misch_1500x.jpg">
+                    <p>Trockene Haut</p>
+                    </div>
+                    <div>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24ZM9.64645 8.35355L13.2929 12L9.64645 15.6464L10.3536 16.3536L14.3536 12.3536L14.7071 12L14.3536 11.6464L10.3536 7.64645L9.64645 8.35355Z" fill="black"></path>
+                        </svg>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="img/NormaleHaut_1500x.jpg">
+                        <p>Normale Haut</p>
+                    </div>
+                    <div>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24ZM9.64645 8.35355L13.2929 12L9.64645 15.6464L10.3536 16.3536L14.3536 12.3536L14.7071 12L14.3536 11.6464L10.3536 7.64645L9.64645 8.35355Z" fill="black"></path>
+                        </svg>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                    <img src="img/Reife_1500x.jpg">
+                    <p>Ölige und Mischhaut</p>
+                    </div>
+                    <div>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24ZM9.64645 8.35355L13.2929 12L9.64645 15.6464L10.3536 16.3536L14.3536 12.3536L14.7071 12L14.3536 11.6464L10.3536 7.64645L9.64645 8.35355Z" fill="black"></path>
+                        </svg>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                    <img src="img/Trocken_1500x.jpg">
+                    <p>Reife Haut</p>
+                    </div> 
+                    <div>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24ZM9.64645 8.35355L13.2929 12L9.64645 15.6464L10.3536 16.3536L14.3536 12.3536L14.7071 12L14.3536 11.6464L10.3536 7.64645L9.64645 8.35355Z" fill="black"></path>
+                        </svg>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="sec7">
+            <img src="img/Hauttestcover_1500x.jpg" id="sec7_img">
+            <ul class="sec7_title">
+                <li class="s_text">Noch nicht sicher?</li>
+                <li class="b_text">Finde Dein passendes Produkt</li>
+                <li class="sec7_btn" id="sec7_btn"> <a>Zum Hauttest</a></li>
+            </ul>
+        </div>
+
+        <div class="sec8">
+            <div class="sec8_title">Unsere Kunden</div>
+            <div class="sec8_flex">
+                <div class="sec8_img"><div></div></div>
+                <div class="review">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                              <ul>
+                                  <li class="review_img_1">
+                                      <p class="img_1"></p>
+                                      <p>Julia S.</p>
+                                  </li>
+                                  <li class="review_text">
+                                    “... habe es nicht für möglich gehalten: ich bekomme deutlich weniger Pickel und mein Hautbild ist feiner geworden. Außerdem habe ich das Gefühl, dass meine Haut nicht mehr so überladen ist. Alles in allem: super Gefühl“
+                                  </li>
+                                  <li class="review_footer">
+                                      <p>
+                                          <span>HAUTTYP</span>
+                                          <span> MISCHHAUT </span>
+                                        </p>
+                                        <p>
+                                            <span> Alter </span>
+                                            <span> 42 JAHRE </span>
+                                          </p>
+                                          <p>
+                                            <span> Produkte </span>
+                                            <span>  Set Light PRO </span>
+                                          </p>
+                                  </li>
+                              </ul>
+                          </div>
+                          <div class="swiper-slide">
+                            <ul>
+                                <li class="review_img_1">
+                                    <p class="img_2"></p>
+                                    <p>STEFFIE K.</p>
+                                </li>
+                                <li class="review_text">
+                                    "ich verwende jetzt seit ein paar Wochen das Concentrate und die Lotion in der PRO Variante und bin super happy. Meine Haut fühlt sich optimal gepflegt und den ganzen Tag über gut mit Feuchtigkeit versorgt an, ohne ölig zu werden"
+                                </li>
+                                <li class="review_footer">
+                                    <p>
+                                        <span>HAUTTYP</span>
+                                        <span>  Normale Haut  </span>
+                                      </p>
+                                      <p>
+                                          <span> Alter </span>
+                                          <span>  27 Jahre  </span>
+                                        </p>
+                                        <p>
+                                          <span> Produkte </span>
+                                          <span>  Set Light PRO </span>
+                                        </p>
+                                </li>
+                            </ul>
+                          </div>
+                          <div class="swiper-slide">
+                            <ul>
+                                <li class="review_img_1">
+                                    <p class="img_3"></p>
+                                    <p>Anna H.</p>
+                                </li>
+                                <li class="review_text">
+                                    "... ich verwende das Concentrate und die Lotion in der Essential Variante. Ich habe sehr sensible Haut und war erst skeptisch, ob ich es wagen soll. Und ich möchte beide Produkte in meiner täglichen Routine nicht mehr missen! Ich bin einfach glücklich - meine Haut fühlt sich optimal gepflegt und den ganzen Tag über gut mit Feuchtigkeit versorgt an"
+                                </li>
+                                <li class="review_footer">
+                                    <p>
+                                        <span>HAUTTYP</span>
+                                        <span>  Sensitive Mischhaut  </span>
+                                      </p>
+                                      <p>
+                                          <span> Alter </span>
+                                          <span>  44 Jahre  </span>
+                                        </p>
+                                        <p>
+                                          <span> Produkte </span>
+                                          <span>  Set Light </span>
+                                        </p>
+                                </li>
+                            </ul>
+                          </div>
+                          <div class="swiper-slide">
+                            <ul>
+                                <li class="review_img_1">
+                                    <p class="img_4"></p>
+                                    <p>Karin B.</p>
+                                </li>
+                                <li class="review_text">
+                                    “Eigentlich wollte ich die gewohnten Produkte nicht wechseln. Ich war aber neugierig auf die einzigartige Methode der Herstellung, und möchte jetzt nicht mehr darauf verzichten! Unglaublich auch, wie wenig man nur davon braucht, ich bin sehr zufrieden.“
+                                </li>
+                                <li class="review_footer">
+                                    <p>
+                                        <span>HAUTTYP</span>
+                                        <span> extrem empfindliche reife Haut </span>
+                                      </p>
+                                      <p>
+                                          <span> Alter </span>
+                                          <span> 77 JAhre </span>
+                                        </p>
+                                        <p>
+                                          <span> Produkte </span>
+                                          <span> SET RICH</span>
+                                        </p>
+                                </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="news">
+            <p>Newsletter</p>
+            <p>ERFAHRE REGELMÄSSIG DAS NEUSTE ÜBER UNS UND UNSERE PRODUKTE</p>
+        </div>
+        <div class="mail">
+            <input id="NewsletterForm--footer" type="email" name="contact[email]" class="email email-input" value="" aria-required="true" autocorrect="off" autocapitalize="off" autocomplete="email" placeholder="Deine Email Adresse..." required="">
+            <p> <a>JETZT ANMELDEN</a> </p>
+        </div>
+        <div class="footer_menu">
+            <div class="logo">
+                <a href="/">
+                    <svg width="105" height="10" viewBox="0 0 105 10" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M24.8855 0C21.2176 0 19.0194 2.02047 19.0194 4.84938C19.0194 7.67814 21.0642 9.69876 24.8217 9.69876C27.2882 9.69876 28.4639 8.90394 28.9496 8.33816V9.56366H30.3171V4.72869H24.8217V5.99394H28.9496V6.23675C28.9496 7.4491 27.5943 8.43256 24.9494 8.43256H24.6939C22.0356 8.43256 20.4126 7.13944 20.4126 4.84938C20.4126 2.55932 22.1634 1.2662 24.745 1.2662H25.0005C27.6333 1.2662 28.4384 2.46508 28.579 3.23281H30.1126C29.857 1.44138 28.1061 0 24.8855 0ZM9.21449 8.29764V9.56383H0V0.134516H9.0866V1.40039H1.36736V4.06758H8.31989V5.33378H1.36736V8.29732L9.21449 8.29764ZM13.6986 0.134516H15.0661V9.56383H13.6986V0.134516ZM43.6516 8.29764V9.56383H34.437V0.134516H43.5237V1.40039H35.8045V4.06758H42.7569V5.33378H35.8045V8.29732L43.6516 8.29764ZM57.2943 9.56383V0.134516H55.9262V8.05514L49.485 0.134516H47.5941V9.56383H48.9616V1.64321L55.4028 9.56383H57.2943ZM61.5758 0.134516H63.0936V4.1756H70.3271V0.134516H71.6947V9.56383H70.3271V5.44196H63.0936V9.56383H61.5758V0.134516ZM77.4498 7.15261H83.5716L84.824 9.56383H86.4085L81.4242 0.134516H79.6605L74.6765 9.56383H76.1974L77.4498 7.15261ZM80.5171 1.26608L82.9197 5.88642H78.1145L80.5171 1.26608ZM89.6016 0.134516H90.9691V9.56383H89.6016V0.134516ZM104.89 9.56383V0.134516H103.522V8.05514L97.0811 0.134516H95.1896V9.56383H96.5571V1.64321L102.998 9.56383H104.89Z"
+                            fill="black"></path>
+                    </svg>
+                </a>
+            </div>
+            <div class="cate">
+                <ul>
+                    <li><a> PRODUKTE </a></li>
+                    <li><a> serum </a></li>
+                    <li><a> Lotion </a></li>
+                    <li><a> sets </a></li>
+                </ul>
+                <ul>
+                    <li><a> info </a></li>
+                    <li><a> ÜBER UNS </a></li>
+                    <li><a> faq </a></li>
+                </ul>
+                <ul>
+                    <li><a> social </a></li>
+                    <li><a> Instagram </a></li>
+                    <li><a> facebook </a></li>
+                    <li><a> tiktok </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <p>© Copyright EIGENHAIN GmbH, 2022</p>
+            <p>
+                <a><span> agb </span></a>
+                <a><span> Widerrufsbelehrung </span></a>
+                <a><span> Datenschutz </span></a>
+                <a><span> Impressum </span></a>
+            </p>
+        </div>
+    </footer>
+
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+
+        // header-burger메뉴 토글
+        const button =()=>{
+            const burger = document.querySelector('.burger');
+            const aside = document.querySelector('.mo_aside_menu');
+            burger.addEventListener('click', ()=> { 
+                burger.classList.toggle('toggle');
+                aside.classList.toggle('active');
+            });
+        };
+        button();
+        // header-burger
+        
+        //header 서브메뉴 노출
+        mh.addEventListener('mouseover', function () {
+            menu1.classList.add('active');
+            menu_text.classList.add('active');
+        });
+        menu_text.addEventListener('mouseleave', function () {
+            menu1.classList.remove('active');
+            menu_text.classList.remove('active');
+        });
+        //header 서브메뉴 노출
+
+        //sec7 호버시 이미지 사이즈 키우기
+        sec7_btn.addEventListener('mouseover', function () {
+            sec7_img.style = "transform:scale(1.2);"
+        });
+        sec7_btn.addEventListener('mouseleave', function () {
+            sec7_img.style = "transform:scale(1);"
+        });
+
+        // js 반응형 슬라이더 이미지 변경
+        const mobill = window.matchMedia("screen and (max-width: 1000px)");
+        if (mobill.matches) {
+            swipeImg.src = "./img/singel_1800x.jpg";
+        }
+    </script>
+</body>
+
+</html>

@@ -5,17 +5,97 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/index.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <title>css_training</title>
 </head>
 <body>
   <header>
-
+    <div class="header_title">EIGENHAIN</div>
+    <div class="nav">
+      <ul>
+        <li>PRODUKTE</li>
+        <li>HAUTTEST</li>
+        <li>UBERUNS</li>
+      </ul>
+    </div>
+    <div class="user-info">
+      <ul>
+        <li>ACCOUNT</li>
+        <li>WARENKORB:<span>0</span></li>
+      </ul>
+    </div>
   </header>
   <main>
+    <div class="main_swiper">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/Banner-01_1800x.jpg" id="swipeImg">
+            <ul class="slider_ul">
+              <li class="slider_li_title">
+                <p>°ColdStirred for more effect</p>
+                <p>Kalt gerührte Gesichtspflege voller hochwertiger Wirkstoffe</p>
+              </li>
+              <li class="slider_li_btn">
+                <a>JETZT KAUFEN</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="img/Banner-02_1800x.jpg">
+            <ul class="slider_ul">
+                <li class="slider_li_title">
+                    <p>°ColdStirred for healthy skin</p>
+                    <p>Das Kaltrühren minimiert zudem die Entstehung von unerwünschten Abbauprodukten</p>
+                </li>
+                <li class="slider_li_btn">
+                    <a>JETZT KAUFEN</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="swiper-slide">
+            <img src="img/Banner-03_1800x.jpg">
+            <ul class="slider_ul">
+                <li class="slider_li_title">
+                    <p>°ColdStirred Concentrate + °ColdStirred Recharge Lotion</p>
+                    <p>Entdecke Deine persönliche Hautpflege im Set - ab 68 €</p>
+                </li>
+                <li class="slider_li_btn">
+                    <a>Jetzt Entdecken</a>
+                </li>
+            </ul>
+        </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <div class=""></div>
 
   </main>
   <footer>
-
+    <div class="news">
+      <div class="newstitle">News Letter</div>
+      <div class="newscontent">ERFAHRE REGELMÄSSIG DAS NEUSTE ÜBER UNS UND UNSERE PRODUKTE</div>
+    </div>
+    <div class="mail">
+      <input type="email" placeholder="Input youer Email" required />
+      <p><a>JETZT ANMELDEN</a></p>
+    </div>
   </footer>
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+      var swiper = new Swiper(".mySwiper", {
+          pagination: {
+              el: ".swiper-pagination",
+          },
+      });
+</script>
 </body>
 </html>
