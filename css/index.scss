@@ -1,5 +1,6 @@
 body{
   text-decoration: none;
+  font-family: 'Dosis', sans-serif;
   padding : 0;
   margin : 0;
   ul{
@@ -12,45 +13,192 @@ body{
       margin: 0;
     }
   }
+  a{text-decoration: none;color:black;}
 }
 
 header{
-  display:flex;
-  justify-content: space-between;
-  border: 1px solid #d8d8d8;
-  .header_title{
-    border-right: 1px solid #d8d8d8;
-    font-size: 1.1rem;
-    letter-spacing: 2px;
-    line-height: 63px;
-    width: 300px;
-    text-align:center;
-  }
-  .nav{
-    font-size: 0.9rem;
-    width: auto;
-    ul {
+  position: relative;
+  background-color: #ffff;
+  border-top: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  .header-nav{
+    z-index: 9998;
+    display:flex;
+    justify-content: space-between;
+    border: 1px solid #d8d8d8;
+    .header_title{
+      border-right: 1px solid #d8d8d8;
+      line-height: 57px;
+      width: 300px;
+      text-align:center;
+    }
+    .nav{
+      font-size: 13px;
+      text-transform: uppercase;
+      width: auto;
+      ul {
+        display:flex;
+        text-align: center;
+        li{
+          margin: 0 12px 0 12px;
+          line-height: 63px;
+        }:hover{
+          cursor: pointer;
+        }
+      }
+    }
+    .user-info{
+      width:300px;
+      border-left: 1px solid #d8d8d8;
+      font-size: 0.9rem;
       display:flex;
-      text-align: center;
-      li{
-        margin: 0 12px 0 12px;
-        line-height: 63px;
+      justify-content:center ;
+      ul{
+        display:flex;
+        text-align: center;
+        li{
+          line-height:63px;
+          margin: 0 12px 0 12px;
+        }
       }
     }
   }
-  .user-info{
-    width:300px;
-    border-left: 1px solid #d8d8d8;
-    font-size: 0.9rem;
-    display:flex;
-    justify-content:center ;
-    ul{
-      display:flex;
+  .select_bg{
+    background-color: #ffff;
+    height:0px;
+    width: 100%;
+    position: absolute;
+    top:66px;
+    &.active{
+      height: 215px;
+    }
+  }
+  
+  .select{
+      font-family: 'Dosis';
+      position:absolute;
+      top:86px;
+      height:175px;
+      width:100%;
       text-align: center;
-      li{
-        line-height:63px;
-        margin: 0 12px 0 12px;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      opacity:0;
+      transition:.5s;
+      ul{
+        margin: 30px 0 30px 0;
       }
+      li{
+          text-align: center;
+          opacity: 0.3;
+          transition: 1s;
+          padding: 8px;
+          a{font-size:22px;cursor:pointer;}
+          &:nth-of-type(1){padding-top:20px;}
+          &:nth-of-type(4){padding-bottom:20px;}
+      }          
+      &.active{
+        opacity: 1;
+        height: 175px;
+        li:hover{
+          opacity:1;
+        }
+      }
+      &.allblack{
+        opacity: 1;
+        height: 175px;
+        li{
+          opacity:1;
+        }
+      }
+  }
+}
+
+main{
+  .main_swiper{
+    z-index: 1;
+  }
+}
+
+footer{
+  text-align:center;
+  .newsletter-signup{
+    border-top: 1px solid #d8d8d8;
+    border-bottom: 1px solid #d8d8d8;
+    text-align: center;
+    .newsletter-title{
+      padding: 40px 0 40px 0;
+      border-bottom: 1px solid #d8d8d8;
+    }   
+    h2{
+      margin: 0 0 16px;
+    }
+    h3{
+      margin: 0 16px;
+    }
+  }
+  .newsletter-input{
+    margin: 0 40px 0 40px; 
+    .newsletter-input-container{
+      display:flex;
+      justify-content:space-between;
+      line-height: 130%;
+      .email-input{
+        border: 0;
+        font-size: 22px;
+        padding: 24px 0;
+        width: 100%;
+      }:focus{
+        outline: none;
+      }
+      button{
+        border:0;
+        background-color: #ffff;
+        font-size: 13px;
+        width: 150px;
+      }
+    }
+  }
+  .footer-navigation{
+    padding: 80px 0;
+    .footer-logo{
+      margin: 0 0 56px;
+    }
+    .footer-nav{
+      display:flex;
+      justify-content:center;
+    }
+    .footer-nav-column{
+      text-align: center;
+      width: 150px;
+      h3{
+        font-size: 13px;
+        margin: 0 0 16px;
+        color: #9d9d9d;
+      }
+      li{
+        margin: 0 0 16px;
+        font-size: 16px;
+      }
+    }
+  }
+  .footer-submenu{
+    border-top: 1px solid #d8d8d8;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 56px;
+    font-size:10px;
+    h4{
+      margin:0;
+    }
+    a{
+      margin: 0 0 0 16px;
     }
   }
 }

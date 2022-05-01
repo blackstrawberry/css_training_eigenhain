@@ -6,25 +6,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/index.css"/>
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="./js/index.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;500&display=swap" rel="stylesheet">
   <title>css_training</title>
 </head>
 <body>
   <header>
-    <div class="header_title">EIGENHAIN</div>
-    <div class="nav">
-      <ul>
-        <li>PRODUKTE</li>
-        <li>HAUTTEST</li>
-        <li>UBERUNS</li>
-      </ul>
+    <div class="header-nav">
+      <div class="header_title"><svg width="105" height="10" viewBox="0 0 105 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M24.8855 0C21.2176 0 19.0194 2.02047 19.0194 4.84938C19.0194 7.67814 21.0642 9.69876 24.8217 9.69876C27.2882 9.69876 28.4639 8.90394 28.9496 8.33816V9.56366H30.3171V4.72869H24.8217V5.99394H28.9496V6.23675C28.9496 7.4491 27.5943 8.43256 24.9494 8.43256H24.6939C22.0356 8.43256 20.4126 7.13944 20.4126 4.84938C20.4126 2.55932 22.1634 1.2662 24.745 1.2662H25.0005C27.6333 1.2662 28.4384 2.46508 28.579 3.23281H30.1126C29.857 1.44138 28.1061 0 24.8855 0ZM9.21449 8.29764V9.56383H0V0.134516H9.0866V1.40039H1.36736V4.06758H8.31989V5.33378H1.36736V8.29732L9.21449 8.29764ZM13.6986 0.134516H15.0661V9.56383H13.6986V0.134516ZM43.6516 8.29764V9.56383H34.437V0.134516H43.5237V1.40039H35.8045V4.06758H42.7569V5.33378H35.8045V8.29732L43.6516 8.29764ZM57.2943 9.56383V0.134516H55.9262V8.05514L49.485 0.134516H47.5941V9.56383H48.9616V1.64321L55.4028 9.56383H57.2943ZM61.5758 0.134516H63.0936V4.1756H70.3271V0.134516H71.6947V9.56383H70.3271V5.44196H63.0936V9.56383H61.5758V0.134516ZM77.4498 7.15261H83.5716L84.824 9.56383H86.4085L81.4242 0.134516H79.6605L74.6765 9.56383H76.1974L77.4498 7.15261ZM80.5171 1.26608L82.9197 5.88642H78.1145L80.5171 1.26608ZM89.6016 0.134516H90.9691V9.56383H89.6016V0.134516ZM104.89 9.56383V0.134516H103.522V8.05514L97.0811 0.134516H95.1896V9.56383H96.5571V1.64321L102.998 9.56383H104.89Z" fill="black"></path>
+    </svg></div>
+      <div class="nav" id="nav">
+        <ul>
+          <li id="dropdown">Produkte</li>
+          <li>Hauttest</li>
+          <li>Über Uns</li>
+          <li>Magazin</li>
+        </ul>
+      </div>
+      <div class="user-info">
+        <ul>
+          <li>ACCOUNT</li>
+          <li>WARENKORB:<span>0</span></li>
+        </ul>
+      </div>
     </div>
-    <div class="user-info">
+    <div class="select_bg" id="select_bg"></div>
+    <div class="select" id="select">
       <ul>
-        <li>ACCOUNT</li>
-        <li>WARENKORB:<span>0</span></li>
+        <li><a>Serum</a></li>
+        <li><a>Lotion</a></li>
+        <li><a>Sets</a></li>
+        <li><a>Minis</a></li>
       </ul>
-    </div>
-  </header>
+    </div> 
+ </header>
   <main>
     <div class="main_swiper">
       <div class="swiper mySwiper">
@@ -77,15 +95,135 @@
 
   </main>
   <footer>
-    <div class="news">
-      <div class="newstitle">News Letter</div>
-      <div class="newscontent">ERFAHRE REGELMÄSSIG DAS NEUSTE ÜBER UNS UND UNSERE PRODUKTE</div>
+    <div class="newsletter-signup">
+        <div class="newsletter-title">
+          <h2>Newsletter</h2>
+          <h3>Erfahre regelmäßig das Neuste über Uns und Unsere Produkte</h3>
+        </div>
+        <div class="newsletter-input">
+            <form method="post" action="/contact#contact_form" id="contact_form" accept-charset="UTF-8" class="newsletter-form"><input type="hidden" name="form_type" value="customer"><input type="hidden" name="utf8" value="✓">
+                <input type="hidden" name="contact[tags]" value="newsletter">
+                <div>
+                    <div class="newsletter-input-container">
+                        <input id="NewsletterForm--footer" type="email" name="contact[email]" class="email email-input" value="" aria-required="true" autocorrect="off" autocapitalize="off" autocomplete="email" placeholder="Deine Email Adresse..." required="">
+                        <button type="submit" class="newsletter-form__button submit-button" name="commit" id="Subscribe" aria-label="Abonnieren">
+                            JETZT ANMELDEN
+                        </button>
+                    </div>
+                </div>
+    
+                <div class="newsletter-response">
+                    
+    
+                    
+                </div>
+            </form>
+        </div>
     </div>
-    <div class="mail">
-      <input type="email" placeholder="Input youer Email" required />
-      <p><a>JETZT ANMELDEN</a></p>
+    <div class="footer-navigation">
+      <div class="footer-logo">
+        <svg width="105" height="10" viewBox="0 0 105 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M24.8855 0C21.2176 0 19.0194 2.02047 19.0194 4.84938C19.0194 7.67814 21.0642 9.69876 24.8217 9.69876C27.2882 9.69876 28.4639 8.90394 28.9496 8.33816V9.56366H30.3171V4.72869H24.8217V5.99394H28.9496V6.23675C28.9496 7.4491 27.5943 8.43256 24.9494 8.43256H24.6939C22.0356 8.43256 20.4126 7.13944 20.4126 4.84938C20.4126 2.55932 22.1634 1.2662 24.745 1.2662H25.0005C27.6333 1.2662 28.4384 2.46508 28.579 3.23281H30.1126C29.857 1.44138 28.1061 0 24.8855 0ZM9.21449 8.29764V9.56383H0V0.134516H9.0866V1.40039H1.36736V4.06758H8.31989V5.33378H1.36736V8.29732L9.21449 8.29764ZM13.6986 0.134516H15.0661V9.56383H13.6986V0.134516ZM43.6516 8.29764V9.56383H34.437V0.134516H43.5237V1.40039H35.8045V4.06758H42.7569V5.33378H35.8045V8.29732L43.6516 8.29764ZM57.2943 9.56383V0.134516H55.9262V8.05514L49.485 0.134516H47.5941V9.56383H48.9616V1.64321L55.4028 9.56383H57.2943ZM61.5758 0.134516H63.0936V4.1756H70.3271V0.134516H71.6947V9.56383H70.3271V5.44196H63.0936V9.56383H61.5758V0.134516ZM77.4498 7.15261H83.5716L84.824 9.56383H86.4085L81.4242 0.134516H79.6605L74.6765 9.56383H76.1974L77.4498 7.15261ZM80.5171 1.26608L82.9197 5.88642H78.1145L80.5171 1.26608ZM89.6016 0.134516H90.9691V9.56383H89.6016V0.134516ZM104.89 9.56383V0.134516H103.522V8.05514L97.0811 0.134516H95.1896V9.56383H96.5571V1.64321L102.998 9.56383H104.89Z" fill="black"></path>
+        </svg>
+      </div>
+  
+      <div class="footer-nav">
+              <div class="footer-nav-column">
+                  <h3>PRODUKTE</h3>
+                  <ul>
+                      
+                          <li>
+                              <a href="/pages/serum" class="">
+                                  serum
+                              </a>
+                          </li>
+                      
+                          <li>
+                              <a href="/pages/lotion" class="">
+                                  Lotion
+                              </a>
+                          </li>
+                      
+                          <li>
+                              <a href="/pages/sets" class="">
+                                  Sets
+                              </a>
+                          </li>
+                      
+                  </ul>
+              </div>  
+          
+              <div class="footer-nav-column">
+                  <h3>info</h3>
+                  <ul>
+                      
+                          <li>
+                              <a href="/pages/about" class="">
+                                  ÜBER UNS
+                              </a>
+                          </li>
+                      
+                          <li>
+                              <a href="/pages/faq" class="">
+                                  FAQ
+                              </a>
+                          </li>
+                      
+                  </ul>
+              </div>  
+          
+              <div class="footer-nav-column">
+                  <h3>social</h3>
+                  <ul>
+                      
+                          <li>
+                              <a href="https://www.instagram.com/eigenhain.skincare/" class="">
+                                  Instagram
+                              </a>
+                          </li>
+                      
+                          <li>
+                              <a href="https://www.facebook.com/eigenhain.skincare" class="">
+                                  Facebook
+                              </a>
+                          </li>
+                      
+                          <li>
+                              <a href="https://www.tiktok.com/@eigenhain.skincare" class="">
+                                  TikTok
+                              </a>
+                          </li>
+                      
+                  </ul>
+              </div>  
+          </div>
     </div>
-  </footer>
+        <div class="footer-submenu">
+            <div class="left-menu">
+                <h4>© Copyright EIGENHAIN GmbH, 2022</h4>
+            </div>
+    
+            <div class="right-menu">
+                
+                    <a href="/pages/agb" class="extra-small ">
+                        AGB
+                    </a>
+                
+                    <a href="/pages/widerrufsbelehrung" class="extra-small ">
+                        Widerrufsbelehrung
+                    </a>
+                
+                    <a href="/pages/datenschutz" class="extra-small ">
+                        Datenschutz
+                    </a>
+                
+                    <a href="/pages/impressum" class="extra-small ">
+                        Impressum
+                    </a>
+                
+            </div>
+        </div>
+    </footer>
   <!-- Swiper JS -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
@@ -95,6 +233,38 @@
           pagination: {
               el: ".swiper-pagination",
           },
+      });
+      const select_menu = document.querySelectorAll(".select li");
+      console.log(select_menu);
+      dropdown.addEventListener('mouseover', function () {
+        select_bg.classList.add('active');
+        select_bg.style.transition = ".5s";
+        select.style.transition = ".5s";
+        select.classList.add('allblack');
+        select_bg.style.opacity = "1";
+      });
+      select.addEventListener('mouseover', function () {
+        select_bg.classList.add('active');
+        select.classList.add('active');
+        select_bg.style.transition = ".5s";
+        select.style.transition = ".5s";
+        select_bg.style.opacity = "1";
+      });
+      select.addEventListener('mouseleave', function () {
+        select_bg.classList.remove('active');
+        select.classList.remove('active');
+        select.classList.remove('allblack');
+        select_bg.style.transition = ".1s";
+        select.style.transition = ".1s";
+        select_bg.style.opacity = "0";
+      });
+      dropdown.addEventListener('mouseleave', function () {
+        select_bg.classList.remove('active');
+        select.classList.remove('active');
+        select.classList.remove('allblack');
+        select_bg.style.transition = ".1s";
+        select.style.transition = ".1s";
+        select_bg.style.opacity = "0";
       });
 </script>
 </body>
