@@ -183,40 +183,178 @@ main{
     h1{font-size: 36px; margin: 56px 0 70px 0; padding: 0 56px 0 56px; text-align: center; word-break: keep-all; font-weight: 500; line-height: 140%;}
   }
 
-  .marquee__container{
-      position: relative;
-      padding: 24px 0 19px 0px;
-      overflow: hidden;
+  .marquee-section{
+    border-bottom: 1px solid #d8d8d8;
+    overflow: hidden;
+    padding:24px 0 19px;
+    .marquee__items{
+      display:flex;
+      width: 400%;
+      animation: marqueeAni 40s linear infinite;
+      .marquee__item{
+        display:flex;
+        align-items: center;
+        svg{
+          margin-right: 24px;
+        }
+        .marquee__text{
+          margin-right: 24px;
+          font-size: 22px;
+        }
+      }
+
+    }
+    @keyframes marqueeAni {
+      100%{transform: translateX(-1000px);}
+    }
   }
-  .marquee__wrapper{
-      overflow: hidden;
-      visibility: visible;
+
+
+  .product-1{
+    ul{
+      display: flex;
+      border-bottom: 1px solid #d8d8d8;
+      li{
+        padding: 56px;
+        width: 30%;
+        text-align: center;
+        flex-wrap: wrap;
+        img{
+          height: 300px;
+        }
+        &:nth-of-type(2){
+          border-left:1px solid #D8D8D8;
+          border-right:1px solid #D8D8D8;
+        }
+        .p-title{
+          font-size: 22px;
+          margin: 40px 0 0;
+        }
+        .p-text{
+          display:inline-block;
+          font-size: 13px;
+          padding: 4px 8px;
+          color: #585858;
+          background-color: #f2f2f3;
+          border-radius: 5px;
+        }
+        .p-price{
+          font-size: 13px;
+          margin: 19px 0 0;
+        }
+        a{
+          margin: 25px auto 0;
+          padding: 12px;
+          background-color: #000;
+          color: #fff;
+          border-radius: 5px;
+          display: block;
+          width: 60%
+        }
+        img,div,a{
+          cursor: pointer;
+        }
+        img:hover, div:hover, a:hover{
+          transition: .3s;
+          opacity: 0.5;
+        }
+      }
+    
+    }
+  }
+  .product-2{
+    ul{
+      display: flex;
+      justify-content: center;
+      border-bottom: 1px solid #d8d8d8;
+      li{
+        padding: 56px;
+        width: 30%;
+        text-align: center;
+        flex-wrap: wrap;
+        img{
+          height: 300px;
+        }
+        &:nth-of-type(2){
+          border-left:1px solid #D8D8D8;
+          border-right:1px solid #D8D8D8;
+        }
+        .p-title{
+          font-size: 22px;
+          margin: 40px 0 0;
+        }
+        .p-text{
+          display:inline-block;
+          font-size: 13px;
+          padding: 4px 8px;
+          color: #585858;
+          background-color: #f2f2f3;
+          border-radius: 5px;
+        }
+        .p-price{
+          font-size: 13px;
+          margin: 19px 0 0;
+        }
+        a{
+          margin: 25px auto 0;
+          padding: 12px;
+          background-color: #000;
+          color: #fff;
+          border-radius: 5px;
+          display: block;
+          width: 60%
+        }
+        img,div,a{
+          cursor: pointer;
+        }
+        img:hover, div:hover, a:hover{
+          transition: .3s;
+          opacity: 0.5;
+        }
+      }
+    
+    } 
+  }
+
+  .sideimage-1, .sideimage-2{
+    display: flex;
+    div{
+      min-height:700px;
+      // overflow: hidden; 
+      width:50%;
+    }
+    .img-wrap{
+      background-image: url('../img/lemon.jpg');
+      width: 50%;
       height: 100%;
-      display: block;
-      white-space: nowrap;
-      overflow: hidden;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+    .description{
+        p{
+          // justify-content: center;
+          // align-items: center;
+          text-align: center;
+          padding: 0 56px;
+        }
+
+    }
   }
-  .marquee__items{
-      display: flex;
-      flex-direction: row;
-      align-items: center;
+  .sideimage-1{
+    flex-direction: row;
+    .img-wrap{ 
+      background-image: url('../img/lemon.jpg');
+    }
   }
-  .marquee__item {
-      display: flex;
-      align-items: center;
-      gap: 40px;
-      margin-right: 40px;
-      font-size: 22px;
-      font-weight: 450;
-  }
-  .marquee__icon{
-      display: flex;
-      align-items: center;
+  .sideimage-2{
+    flex-direction: row-reverse;
+    .img-wrap{
+      background-image: url('../img/Hautmikrobiom_a38d5191-80b2-4110-95b1-861db0bd9273_1500x.jpg');
+    }  
   }
 
 }
-
-
 
 
 
