@@ -34,7 +34,6 @@ header {
 }
 
 header .header-nav {
-  z-index: 9998;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -103,6 +102,7 @@ header .select_bg {
   width: 100%;
   position: absolute;
   top: 66px;
+  z-index: -1;
 }
 
 header .select_bg.active {
@@ -110,9 +110,8 @@ header .select_bg.active {
 }
 
 header .select {
-  font-family: 'Dosis';
   position: absolute;
-  top: 86px;
+  top: 65px;
   height: 175px;
   width: 100%;
   text-align: center;
@@ -127,18 +126,19 @@ header .select {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  opacity: 0;
   -webkit-transition: .5s;
   transition: .5s;
+  z-index: -1;
+  padding: 20px 0 20px 0;
+  display: none;
 }
 
 header .select ul {
-  margin: 30px 0 30px 0;
+  margin: 0px 0 30px 0;
 }
 
 header .select li {
   text-align: center;
-  opacity: 0.3;
   -webkit-transition: 1s;
   transition: 1s;
   padding: 8px;
@@ -147,19 +147,22 @@ header .select li {
 header .select li a {
   font-size: 22px;
   cursor: pointer;
-}
-
-header .select li:nth-of-type(1) {
-  padding-top: 20px;
-}
-
-header .select li:nth-of-type(4) {
-  padding-bottom: 20px;
+  opacity: 0;
 }
 
 header .select.active {
-  opacity: 1;
+  display: block;
   height: 175px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+header .select.active a {
+  opacity: 1;
+}
+
+header .select.active li {
+  opacity: 0.3;
 }
 
 header .select.active li:hover {
@@ -167,16 +170,12 @@ header .select.active li:hover {
 }
 
 header .select.allblack {
-  opacity: 1;
+  display: block;
   height: 175px;
 }
 
-header .select.allblack li {
+header .select.allblack li a {
   opacity: 1;
-}
-
-main .main_swiper {
-  z-index: 1;
 }
 
 footer {
@@ -232,6 +231,7 @@ footer .newsletter-input .newsletter-input-container button {
   background-color: #ffff;
   font-size: 13px;
   width: 150px;
+  cursor: pointer;
 }
 
 footer .footer-navigation {

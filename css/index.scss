@@ -25,7 +25,7 @@ header{
   top: 0;
   z-index: 9999;
   .header-nav{
-    z-index: 9998;
+    // z-index: 9998;
     display:flex;
     justify-content: space-between;
     border: 1px solid #d8d8d8;
@@ -72,15 +72,15 @@ header{
     width: 100%;
     position: absolute;
     top:66px;
+    z-index: -1;
     &.active{
       height: 215px;
     }
   }
   
   .select{
-      font-family: 'Dosis';
       position:absolute;
-      top:86px;
+      top:65px;
       height:175px;
       width:100%;
       text-align: center;
@@ -89,42 +89,52 @@ header{
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      opacity:0;
       transition:.5s;
+      z-index:-1;
+      padding: 20px 0 20px 0;
+      display:none;
       ul{
-        margin: 30px 0 30px 0;
+        margin: 0px 0 30px 0;
       }
       li{
           text-align: center;
-          opacity: 0.3;
           transition: 1s;
           padding: 8px;
-          a{font-size:22px;cursor:pointer;}
-          &:nth-of-type(1){padding-top:20px;}
-          &:nth-of-type(4){padding-bottom:20px;}
-      }          
+          a{font-size:22px;cursor:pointer;opacity: 0;}
+      }       
       &.active{
-        opacity: 1;
+        display:block;
+        a {opacity: 1;}
+        li{opacity: 0.3;}
         height: 175px;
+        transition: 1s;
         li:hover{
-          opacity:1;
+            opacity:1;
         }
       }
       &.allblack{
-        opacity: 1;
+        display:block;
         height: 175px;
-        li{
+        li a{
           opacity:1;
         }
       }
   }
 }
 
+
+
+
+
 main{
-  .main_swiper{
-    z-index: 1;
-  }
+  
+
 }
+
+
+
+
+
 
 footer{
   text-align:center;
@@ -162,6 +172,7 @@ footer{
         background-color: #ffff;
         font-size: 13px;
         width: 150px;
+        cursor: pointer;
       }
     }
   }
