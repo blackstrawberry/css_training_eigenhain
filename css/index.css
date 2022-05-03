@@ -1,6 +1,6 @@
 body {
   text-decoration: none;
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Outfit', sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -176,6 +176,162 @@ header .select.allblack {
 
 header .select.allblack li a {
   opacity: 1;
+}
+
+main .main_swiper {
+  position: relative;
+  height: 700px;
+}
+
+main .main_swiper img {
+  position: absolute;
+}
+
+main .main_swiper .slider_ul {
+  height: 700px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .main_swiper .slider_ul .slider_li_title {
+  text-align: center;
+}
+
+main .main_swiper .slider_ul .slider_li_title h1 {
+  color: #ffff;
+  font-size: 36px;
+  padding: 0;
+  margin: 0;
+}
+
+main .main_swiper .slider_ul .slider_li_title p {
+  color: #ffff;
+  text-align: center;
+  font-size: 14.5px;
+  margin: 4px 0 0;
+  padding: 0;
+}
+
+main .main_swiper .slider_ul .slider_li_title a {
+  background-color: #ffff;
+  color: #000;
+  border-radius: 5px;
+  margin-top: 40px;
+  font-size: 13px;
+  padding: 16px 40px;
+  display: inline-block;
+}
+
+main .main_swiper .pagination .swiper-pagination {
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 14px;
+  background-color: #ffffff2b;
+  width: 53px;
+  height: 14px;
+  bottom: 2em;
+}
+
+main .main_swiper .pagination .swiper-pagination-bullet {
+  background: white;
+  width: 6px;
+  height: 6px;
+}
+
+main .main_swiper .pagination .swiper-pagination-bullet-active {
+  background: #fff;
+}
+
+main .border-bottom {
+  border-bottom: 1px solid #d8d8d8;
+}
+
+main .shopify-section p {
+  font-size: 22px;
+  padding: 24px;
+  text-align: center;
+}
+
+main .shopify-section h1 {
+  font-size: 36px;
+  margin: 56px 0 70px 0;
+  padding: 0 56px 0 56px;
+  text-align: center;
+  word-break: keep-all;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+main .marquee__container {
+  position: relative;
+  padding: 24px 0 19px 0px;
+  overflow: hidden;
+}
+
+main .marquee__wrapper {
+  overflow: hidden;
+  visibility: visible;
+  height: 100%;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+main .marquee__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .marquee__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+  margin-right: 40px;
+  font-size: 22px;
+  font-weight: 450;
+}
+
+main .marquee__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer {
